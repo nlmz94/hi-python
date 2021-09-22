@@ -1,11 +1,9 @@
 import sys
-
-from ex00_ini2json import *
+from ex02_guessing import guess_number
 
 
 def main():
-    ini_file = open(sys.argv[1], "r")
-    print(ini_to_json(ini_file.read()))
+    guess_number(sys.argv[1], sys.argv[2])
 
 
 if __name__ == '__main__':
