@@ -12,7 +12,7 @@ def main_ini_to_json():
 
 def main_json_to_ini():
     ini_file = open(sys.argv[1], "r")
-    json_data = json.load(ini_file)
+    json_data = json.loads(ini_file.read())
     ini_file.close
     json_to_ini(json_data)
 

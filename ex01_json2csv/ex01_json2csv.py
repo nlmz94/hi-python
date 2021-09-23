@@ -11,7 +11,7 @@ def json_to_csv_with_pandas(file_path):
 
 def json_to_csv_without_pandas(file_path):
     with open(file_path) as file_json:
-        json_data = json.load(file_json)
+        json_data = json.loads(file_json.read())
     new_csv_file = open('generated_csv_not_pandas.csv', 'wt')
     csv_writer = csv.writer(
         new_csv_file, escapechar='\n', quoting=csv.QUOTE_NONE)
