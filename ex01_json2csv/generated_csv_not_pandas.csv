@@ -1,7 +1,2 @@
-DEFAULT;bitbucket.org;topsecret.server.com;
-ServerAliveInterval;Compression;CompressionLevel;ForwardX11;
-45;yes;9;yes;
-User;
-hg;
-Port;ForwardX11;
-50022;no;
+DEFAULT;bitbucket.org;topsecret.server.com;
+{"ServerAliveInterval ": " 45", "Compression ": " yes", "CompressionLevel ": " 9", "ForwardX11 ": " yes"};{"User ": " hg"};{"Port ": " 50022", "ForwardX11 ": " no"};
