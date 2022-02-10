@@ -25,7 +25,7 @@ def play_rock_paper_scissors_gameloop():
             user_score = user_score + 1
         if round_winner == 'Computer wins':
             ia_score = ia_score + 1
-    print('PLAYER: ' + str(user_score) + ' | COMPUTER: ' + str(ia_score))
+    print(f'PLAYER: {user_score} | COMPUTER: {ia_score}')
     if user_score == 3:
         return 'Player wins the game!'
     return 'Computer wins the game!'
